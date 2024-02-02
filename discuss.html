@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title - Discuss</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: navy;
+            padding-top: 25px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        header {
+            background-color: white;
+            padding: 0px 0px 40px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            margin-right: 10%;
+        }
+
+        nav a {
+            color: navy;
+            text-decoration: none;
+            padding: 10px 10px;
+            margin: 0 10px;
+            display: inline-block;
+            padding: 10px;
+            font-weight: 500; /* Make the links bolder */
+        }
+
+        nav a.discuss
+        {
+            padding: 10px 10px;
+            color: white;
+            background-color: navy;
+
+            text-decoration: none;
+        }
+        nav a.contact {
+            padding: 10px 10px;
+            color: navy;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+        .logo img {
+            width: 200px;
+            margin-left: 9%;
+            padding-left: 70px;
+        }
+
+        main {
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* Align content to the top */
+        }
+
+        main > div {
+            flex: 0 1 48%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        main .container {
+            text-align: left;
+            color: navy;
+            margin-right: 10%;
+        }
+
+        main h1 {
+            font-weight: bold;
+            color: rgb(12, 12, 81);
+            text-align: left;
+            margin-left: 10%;
+            margin-bottom: 10px; /* Add margin for separation */
+        }
+
+        main form {
+            margin-left: 10%;
+        }
+
+        main label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        main input,
+        main textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        main a.contact-us {
+            display: block;
+            color: #001aff;
+            text-decoration: underline;
+            margin-left: 10%;
+            margin-bottom: 10px; 
+            display: inline-block;
+            padding: 15px;
+            color: #0c1f68;
+            background-color: yellow;
+            margin-left: 1%;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="logo.jpg" alt=""></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">Blog</a>
+            <a href="#" class="discuss-link">Discuss Your Project</a>
+            <a href="#" class="contact" onclick="showAlert()"> (91)-7827113855</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Discuss</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="mobile">Mobile No:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <a href="#" class="contact-us">Contact Us</a>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+    </footer>
+
+    <script src="function.js"></script>
+</body>
+</html>
